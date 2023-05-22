@@ -1,0 +1,3 @@
+PilotName = Socramer
+Experience = 0
+Honor = 0

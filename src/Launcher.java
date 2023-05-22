@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import static utilities.FileTools.fileExists;
 import static utilities.TerminalColors.ANSI_BLUE;
 import static utilities.TerminalColors.ANSI_RESET;
 
@@ -12,17 +13,13 @@ public final class Launcher {
         menu();
     }
 
-    public static void menu() {
-        Scanner scanner = new Scanner(System.in);
+    private static void menu(){
+        Scanner sc = new Scanner(System.in);
+        fileExists();
         while (true) {
             title();
-
-            switch (scanner.next()) {
+            switch (sc.next()) {
                 case "1":
-                    break;
-                case "2":
-                    break;
-                case "3":
                     break;
                 case "0":
                     return;
@@ -38,9 +35,7 @@ public final class Launcher {
                         "**************************************" + "\n" +
                         "***     Welcome to SwapAnomaly     ***" + "\n" +
                         "**************************************" + "\n" +
-                        " 1 -> " + "\n" +
-                        " 2 -> " + "\n" +
-                        " 3 -> " + "\n" +
+                        " 1 -> Stats" + "\n" +
                         " 0 -> Exit" + ANSI_RESET
         );
     }

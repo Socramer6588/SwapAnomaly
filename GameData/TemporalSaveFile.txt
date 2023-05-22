@@ -1,0 +1,6 @@
+PilotName = NoName
+Experience = 0
+Honor = 0
+PilotName = NoName
+Experience = 0
+Honor = 0
